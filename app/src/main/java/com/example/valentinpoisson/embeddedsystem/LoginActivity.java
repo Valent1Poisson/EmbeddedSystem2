@@ -1,8 +1,6 @@
 package com.example.valentinpoisson.embeddedsystem;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -53,7 +51,7 @@ public class LoginActivity extends AppCompatActivity {
         if(username.getText().toString().equals("admin") && password.getText().toString().equals("admin")) {
             startActivity(new Intent(LoginActivity.this, HomeActivity.class));
         }else{
-            startActivity(new Intent(LoginActivity.this, MainActivity.class));
+            startActivity(new Intent(LoginActivity.this, LoginActivity.class));
             //counter--;
             //tx1.setText("Attempts left :" + Integer.toString(counter));
             /*if (counter == 0) {
@@ -61,6 +59,14 @@ public class LoginActivity extends AppCompatActivity {
             }*/
         }
 
+    }
+
+    public void StartRegActivity(View v){
+        startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
+    }
+
+    public void StartPwdActivity(View v){
+        //startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
     }
 
 }

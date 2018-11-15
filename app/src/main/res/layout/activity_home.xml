@@ -4,13 +4,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/logo"
     tools:context="com.example.valentinpoisson.embeddedsystem.HomeActivity">
 
     <TextView
         android:id="@+id/textView3"
+        android:layout_width="160dp"
+        android:layout_height="51dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/Welcome_To_the_BJTU_Gym_CLUB"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.528" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:contentDescription="@string/imageViewDescription"
+        android:layout_width="110dp"
+        android:layout_height="106dp"
+        android:onClick="TrainerActivity"
+        app:srcCompat="@drawable/trainer2"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="45dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:contentDescription="@string/imageViewDescription"
+        android:layout_width="110dp"
+        android:layout_height="106dp"
+        android:onClick="TrainingActivity"
+        app:srcCompat="@drawable/training2"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="45dp" />
+
+    <TextView
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcom !!"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="199dp" />
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/Your_Coach"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/Training"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.533" />
+
 </android.support.constraint.ConstraintLayout>

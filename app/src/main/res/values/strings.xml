@@ -1,6 +1,22 @@
 <resources>
+    <string name="forgotPassword"><u>Forgot your password ?</u></string>
+    <string name="sign_up"><u>Sign up</u></string>
     <string name="app_name">EmbeddedSystem</string>
     <string name="title_activity_login">Sign in</string>
+    <string name="Register">Register</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="Confirm_Password">Confirm Password</string>
+    <string name="User_Name">User Name</string>
+    <string name="or">or</string>
+    <string name="Email_Address">Email Address</string>
+    <string name="Sign_In">Sign In</string>
+    <string name="Welcome">W E L C O M E</string>
+    <string name="To">T O</string>
+    <string name="Your_Coach">Your Coach</string>
+    <string name="Welcome_To_the_BJTU_Gym_CLUB">Welcome To the BJTU Gym CLUB</string>
+    <string name="Training">Training</string>
+    <string name="imageViewDescription">imageViewDescription</string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>

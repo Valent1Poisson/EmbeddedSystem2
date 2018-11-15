@@ -13,11 +13,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
     }
 
-    public void StartLogActivity(View v){
-        startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
-    }
-
-    public void StartMainActivity(View v){
-        startActivity(new Intent(RegisterActivity.this, MainActivity.class));
+    public void StartHomeActivity(View v){
+        startActivity(new Intent(RegisterActivity.this, HomeActivity.class));
     }
 }

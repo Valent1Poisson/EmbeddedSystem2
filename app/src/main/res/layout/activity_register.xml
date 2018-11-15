@@ -16,12 +16,13 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout7"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp">
+        android:layout_marginEnd="16dp"
+        android:id="@+id/textInputLayout3">
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Confirm Password"
+            android:hint="@string/Confirm_Password"
             android:inputType="textPassword" />
     </android.support.design.widget.TextInputLayout>
 
@@ -35,12 +36,13 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:id="@+id/textInputLayout8"
-        tools:layout_editor_absoluteY="0dp">
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp">
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="User Name"
+            android:hint="@string/User_Name"
             android:inputType="text" />
     </android.support.design.widget.TextInputLayout>
 
@@ -60,7 +62,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
+            android:hint="@string/Password"
             android:inputType="textPassword" />
     </android.support.design.widget.TextInputLayout>
 
@@ -80,34 +82,25 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
+            android:hint="@string/Email"
             android:inputType="textEmailAddress" />
     </android.support.design.widget.TextInputLayout>
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Register"
-        android:onClick="StartLogActivity"
-        tools:layout_constraintRight_creator="1"
+        android:layout_width="363dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="96dp"
+        android:background="@android:color/holo_green_dark"
+        android:onClick="StartHomeActivity"
+        android:text="@string/Register"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="40dp"
-        android:layout_marginRight="55dp"
-        android:layout_marginEnd="55dp" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cancel"
-        android:onClick="StartMainActivity"
-        android:layout_marginLeft="55dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="40dp"
-        android:layout_marginStart="55dp" />
+        tools:layout_editor_absoluteY="332dp"
+        tools:layout_editor_absoluteX="13dp" />
 
 </android.support.constraint.ConstraintLayout>

@@ -13,11 +13,5 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void StartLogActivity(View v){
-        startActivity(new Intent(MainActivity.this, LoginActivity.class));
-    }
 
-    public void StartRegActivity(View v){
-        startActivity(new Intent(MainActivity.this, RegisterActivity.class));
-    }
 }
