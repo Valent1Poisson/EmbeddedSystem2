@@ -17,6 +17,7 @@
     <string name="Welcome_To_the_BJTU_Gym_CLUB">Welcome To the BJTU Gym CLUB</string>
     <string name="Training">Training</string>
     <string name="imageViewDescription">imageViewDescription</string>
+    <string name="Calendar">Calendar</string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
@@ -111,4 +112,8 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="title_activity_navigation">Navigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

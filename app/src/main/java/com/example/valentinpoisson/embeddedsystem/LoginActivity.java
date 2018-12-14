@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.valentinpoisson.embeddedsystem.dummy.Navigation;
+
 public class LoginActivity extends AppCompatActivity {
 
     TextView tx1;
@@ -50,6 +52,7 @@ public class LoginActivity extends AppCompatActivity {
 
         if(username.getText().toString().equals("admin") && password.getText().toString().equals("admin")) {
             startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+            finish();
         }else{
             startActivity(new Intent(LoginActivity.this, LoginActivity.class));
             //counter--;
@@ -57,12 +60,14 @@ public class LoginActivity extends AppCompatActivity {
             /*if (counter == 0) {
                 b1.setEnabled(false);
             }*/
+            finish();
         }
 
     }
 
     public void StartRegActivity(View v){
         startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
+        finish();
     }
 
     public void StartPwdActivity(View v){
