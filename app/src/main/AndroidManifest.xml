@@ -44,6 +44,7 @@
         <activity android:name=".TrainingActivity" />
         <activity android:name=".TrainerActivity" />
         <activity android:name=".ChatActivity" />
+        <activity android:name=".VideoActivity" />
         <activity
             android:name=".dummy.Navigation"
             android:label="@string/title_activity_navigation"></activity>
