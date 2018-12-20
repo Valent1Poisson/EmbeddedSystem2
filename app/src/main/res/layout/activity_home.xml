@@ -33,7 +33,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/Welcome_To_the_BJTU_Gym_CLUB"
             android:textAlignment="center"
             android:textSize="20dp"
             android:textStyle="bold" />

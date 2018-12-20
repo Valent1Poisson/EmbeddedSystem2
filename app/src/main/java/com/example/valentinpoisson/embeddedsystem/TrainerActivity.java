@@ -40,7 +40,7 @@ public class TrainerActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
-                Intent intent = new Intent(TrainerActivity.this, ChatActivity.class);
+                Intent intent = new Intent(TrainerActivity.this, CardActivity.class);
                 int message = position;
                 String nbr = "nbr";
                 intent.putExtra(nbr, message);

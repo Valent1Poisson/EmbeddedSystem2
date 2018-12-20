@@ -5,7 +5,7 @@ android {
     buildToolsVersion "26.0.1"
     defaultConfig {
         applicationId "com.example.valentinpoisson.embeddedsystem"
-        minSdkVersion 28
+        minSdkVersion 26
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -21,7 +21,6 @@ android {
 
 dependencies {
 
-    //implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'

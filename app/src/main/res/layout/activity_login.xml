@@ -44,7 +44,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="46dp"
         android:clickable="true"
-        android:onClick="StartPwdActivity"
+        android:onClick="StartPwdFActivity"
         android:text="@string/forgotPassword"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"

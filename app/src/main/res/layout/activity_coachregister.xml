@@ -18,6 +18,21 @@
             android:layout_height="wrap_content"
             android:hint="@string/User_Name"
             android:inputType="textEmailAddress" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:inputType="textPersonName" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -45,6 +60,11 @@
 
     </LinearLayout>
 
+    <ListView
+        android:id="@+id/sports"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -66,7 +86,9 @@
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:checked="true"
         android:onClick="SwitchRegister"
         android:text="Coach Register  " />
+
 
 </LinearLayout>
