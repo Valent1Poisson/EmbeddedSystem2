@@ -9,7 +9,7 @@ import android.widget.Switch;
 import android.widget.Toast;
 
 import com.example.valentinpoisson.embeddedsystem.BDD.Account;
-import com.example.valentinpoisson.embeddedsystem.BDD.AccountBDD;
+import com.example.valentinpoisson.embeddedsystem.BDD.BDD;
 
 
 public class RegisterActivity extends AppCompatActivity {
@@ -32,12 +32,12 @@ public class RegisterActivity extends AppCompatActivity {
 
         if(password.getText().toString().equals(confirmpwd.getText().toString())){
             //create instance class BDD
-            AccountBDD accountBDD = new AccountBDD(this);
+            BDD bdd = new BDD(this);
 
-            Account account = new Account(mail.getText().toString(),password.getText().toString());
-            accountBDD.open();
-            accountBDD.insertAccount(account);
-            accountBDD.close();
+            Account account = new Account(0,mail.getText().toString(),password.getText().toString());
+            bdd.open();
+            bdd.insertAccount(account);
+            bdd.close();
 
             Toast.makeText(this,"Your account is created",Toast.LENGTH_LONG).show();
             //Toast.makeText(this,"Your are connected",Toast.LENGTH_LONG).show();

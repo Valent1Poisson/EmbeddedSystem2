@@ -50,6 +50,16 @@
         android:layout_height="wrap_content">
 
         <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:onClick="LessonActivity"
+            android:backgroundTint="@android:color/background_light"
+            app:srcCompat="@drawable/coach" />
+
+        <ImageButton
             android:id="@+id/imageButton5"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -57,7 +67,7 @@
             android:backgroundTint="@android:color/background_light"
             android:contentDescription="@string/imageViewDescription"
             android:onClick="TrainerActivity"
-            app:srcCompat="@drawable/coach" />
+            app:srcCompat="@drawable/chat" />
 
         <ImageButton
             android:id="@+id/imageButton6"

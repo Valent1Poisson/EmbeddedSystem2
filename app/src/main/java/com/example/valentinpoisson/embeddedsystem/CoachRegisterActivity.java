@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ExpandableListView;
@@ -11,10 +12,11 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.Switch;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.valentinpoisson.embeddedsystem.BDD.Account;
-import com.example.valentinpoisson.embeddedsystem.BDD.AccountBDD;
+import com.example.valentinpoisson.embeddedsystem.BDD.BDD;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,9 +24,12 @@ import java.util.List;
 
 public class CoachRegisterActivity extends AppCompatActivity {
 
+    TextView sportText;
     EditText mail,password,confirmpwd;
     Switch switchR;
     ListView lsports;
+    EditText phone;
+    String sport;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,12 +39,14 @@ public class CoachRegisterActivity extends AppCompatActivity {
         mail = (EditText)findViewById(R.id.mail);
         password = (EditText)findViewById(R.id.password);
         confirmpwd = (EditText)findViewById(R.id.confirmpwd);
+        phone = (EditText)findViewById(R.id.phone);
+        sportText = (TextView)findViewById(R.id.sport);
         switchR = (Switch)findViewById(R.id.switch1);
         switchR.setChecked(true);
 
         lsports = (ListView) findViewById(R.id.sports);
 
-        List<String> ArraySports = new ArrayList<String>();
+        final List<String> ArraySports = new ArrayList<String>();
         ArraySports.add("Ping Pong");
         ArraySports.add("Tennis");
         ArraySports.add("Judo");
@@ -56,18 +63,27 @@ public class CoachRegisterActivity extends AppCompatActivity {
                 ArraySports );
 
         lsports.setAdapter(arrayAdapter);
+
+        lsports.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position,
+                                    long id) {
+                sportText.setText(ArraySports.get(position));
+                sport = ArraySports.get(position);
+            }
+        });
     }
 
     public void StartHomeActivity(View v){
 
         if(password.getText().toString().equals(confirmpwd.getText().toString())){
             //create instance class BDD
-            AccountBDD accountBDD = new AccountBDD(this);
+            BDD bdd = new BDD(this);
 
-            Account account = new Account(mail.getText().toString(),password.getText().toString());
-            accountBDD.open();
-            accountBDD.insertAccount(account);
-            accountBDD.close();
+            Account account = new Account(1,mail.getText().toString(),password.getText().toString());
+            bdd.open();
+            bdd.insertAccount(account);
+            bdd.close();
 
             Toast.makeText(this,"Your account is created",Toast.LENGTH_LONG).show();
             //Toast.makeText(this,"Your are connected",Toast.LENGTH_LONG).show();

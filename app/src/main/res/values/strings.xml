@@ -19,6 +19,8 @@
     <string name="imageViewDescription">imageViewDescription</string>
     <string name="Calendar">Calendar</string>
 
+    <string name="facebook_app_id">366387440607838</string> <string name="fb_login_protocol_scheme">fb366387440607838</string>
+
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>

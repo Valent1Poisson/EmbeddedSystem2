@@ -51,9 +51,18 @@ public class TrainingActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
                 Intent intent = new Intent(TrainingActivity.this, VideoActivity.class);
-                int message = position;
-                String nbr = "nbr";
-                intent.putExtra(nbr, message);
+                String message;
+                if(position==0){
+                    message = "https://archive.org/download/ksnn_compilation_master_the_internet/ksnn_compilation_master_the_internet_510kb.mp4";
+                }
+                else if(position==1){
+                    message = "https://archive.org/download/BrasilXItalia-FinalMexico1970/Wc-70FinalBrazil-italy.mp4";
+                }
+                else {
+                    message ="https://archive.org/embed/mjbangshead/michael-jordan-bangs-head-backboard.mp4";
+                }
+                String url = "url";
+                intent.putExtra(url, message);
                 startActivity(intent);
             }
         });
