@@ -4,6 +4,10 @@ package com.example.valentinpoisson.embeddedsystem;
  * Created by valentinpoisson on 24/12/2018.
  */
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -99,4 +103,36 @@ public class CallActivity extends AppCompatActivity {
                 break;
         }
     }
+
+    public void makeCall(View v){
+        AlertDialog.Builder builder;
+        builder = new AlertDialog.Builder(CallActivity.this);
+        builder.setMessage("Call or SMS ?")
+                .setPositiveButton("Phone Call", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        Intent callIntent = new Intent(Intent.ACTION_CALL);
+                        //callIntent.setData(Uri.parse("tel: " + phone.getText().toString()));
+                        try {
+                            startActivity(callIntent);
+                        } catch(android.content.ActivityNotFoundException ex) {
+                            //
+                        }
+                    }
+                })
+                .setNegativeButton("SMS", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        Intent smsIntent = new Intent(Intent.ACTION_VIEW);
+                        smsIntent.setData(Uri.parse("SMS to: " + ""));
+                        //smsIntent.putExtra("address",phone.getText().toString());
+                        try {
+                            startActivity(smsIntent);
+                        } catch(android.content.ActivityNotFoundException ex) {
+                            //
+                        }
+                    }
+                })
+                .show();
+
+    }
+
 }

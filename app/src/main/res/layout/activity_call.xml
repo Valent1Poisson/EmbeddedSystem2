@@ -25,4 +25,13 @@
         android:text="Send SMS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Call"
+        android:onClick="makeCall"/>
+
+
 </LinearLayout>
