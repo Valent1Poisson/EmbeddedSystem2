@@ -13,8 +13,8 @@ When you are connected you have a button to get a card view with the list of the
 
 ## Assignement 3 :
 
-On your use space we add a button to get a list of advising sport videos and we implemented a video player that get the video from internet and allow to remote the playing.
-About the messenger we only implemented a little UI that seems to a messenger service. Implemented a full messenger servir will be very hard and long to do.
+On your user space we add a button to get a list of advising sport videos and we implemented a video player that get videos from internet and allow to remote the playing.
+About the messenger we only implemented a little UI that seems to a messenger service. Implemented a full messenger servir will be very hard and long to do. Thats why we added on click on a textView an alertDialog that launch AlertDialog with positive and negative Button for calling or sending message.
 
 ## Assignement 5 :
 
