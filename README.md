@@ -1,6 +1,8 @@
 # Assignements
 Cours Embedded system BJTU
 
+### Valentin POISSON 18929045 & VENUTI Leo 18929053
+
 ## Assignements 1
 
 Simple interface to log in and sign up, just an introctuction to layout and managing activities. We didn't use Fragment for the Menu of our App because of software issue that didn't allow us to use this feature (Gradle version could'nt be update). On Coach avtivity, There is a CardView with a recycler View to display Trainer. This list update dynamically. If you click on one trainer you will go on his personnal information. From this activity is possible to send a message to the trainer. On the other feature for the training there is a list View where you can find different Online Video. The last feature for student are the choice of courses depending of your preferencies. You can add Coach filter, time filter and sport filter to find the best course you want. There is a last features only for coach which allow the user to offer courses with different filter.
