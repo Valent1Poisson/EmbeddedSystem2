@@ -1,7 +1,7 @@
 # Assignements
 Cours Embedded system BJTU
 
-### Valentin POISSON 18929045 & VENUTI Leo 18929053
+#### Valentin POISSON 18929045 & VENUTI Leo 18929053
 
 ## Assignements 1
 
